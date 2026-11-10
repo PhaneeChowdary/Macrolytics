@@ -1,0 +1,19 @@
+<svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="macrolytics-bg" x1="34" y1="28" x2="146" y2="152" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#89F0B8" />
+      <stop offset="1" stop-color="#79C9F5" />
+    </linearGradient>
+  </defs>
+  <circle cx="90" cy="90" r="62" fill="url(#macrolytics-bg)" />
+  <rect x="54" y="92" width="12" height="34" rx="6" fill="#07120F" />
+  <rect x="84" y="78" width="12" height="48" rx="6" fill="#07120F" />
+  <rect x="114" y="64" width="12" height="62" rx="6" fill="#07120F" />
+  <path
+    d="M57 77L75.5 93L123 67"
+    stroke="#07120F"
+    stroke-width="10"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>

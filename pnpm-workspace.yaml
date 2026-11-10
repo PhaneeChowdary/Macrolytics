@@ -1,0 +1,60 @@
+# ============================================================================
+# SECURITY: Minimum release age for npm packages. Supply-chain attack defense.
+# ============================================================================
+#
+# This setting requires that any npm package version must have been published
+# for at least 1 day before pnpm will allow installing it. 1440 minutes.
+# This is a critical defense against supply-chain attacks. In most cases,
+# malicious npm releases are discovered and pulled within hours, so a 1-day
+# delay provides a strong safety buffer.
+#
+# DO NOT DISABLE THIS SETTING. Removing or setting it to 0 is considered
+# extremely dangerous and leaves the entire workspace vulnerable to supply-
+# chain attacks, which have been the #1 vector for npm ecosystem compromises.
+#
+# If you must install a package before the 1-day window has passed, for
+# example an urgent security fix, add it to the `minimumReleaseAgeExclude`
+# list below. Do this only for packages from organizations with a strong
+# security record, for example react from Meta or typescript from Microsoft.
+# Remove the exclusion when the 1-day window has passed.
+#
+# Example:
+#   minimumReleaseAgeExclude:
+#     - react
+#     - typescript
+#
+# ============================================================================
+minimumReleaseAge: 1440
+
+packages:
+  - artifacts/nutrition-tracker
+
+catalog:
+  '@tailwindcss/vite': ^4.1.14
+  '@tanstack/react-query': ^5.90.21
+  '@types/node': ^25.3.3
+  '@types/react': ^19.2.0
+  '@types/react-dom': ^19.2.0
+  '@vitejs/plugin-react': ^5.0.4
+  class-variance-authority: ^0.7.1
+  clsx: ^2.1.1
+  framer-motion: ^12.23.24
+  lucide-react: ^0.545.0
+  react: 19.1.0
+  react-dom: 19.1.0
+  tailwind-merge: ^3.3.1
+  tailwindcss: ^4.1.14
+  vite: ^7.3.2
+  wouter: ^3.3.5
+  zod: ^3.25.76
+
+autoInstallPeers: false
+
+onlyBuiltDependencies:
+  - '@swc/core'
+  - esbuild
+  - msw
+  - unrs-resolver
+
+overrides:
+  esbuild: "0.27.3"

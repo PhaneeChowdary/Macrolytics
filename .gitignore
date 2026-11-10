@@ -1,0 +1,139 @@
+# See https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
+
+# compiled output
+dist
+tmp
+out-tsc
+*.tsbuildinfo
+
+# dependencies
+node_modules
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+/typings
+
+# System Files
+.DS_Store
+Thumbs.db
+
+.cursor/rules/nx-rules.mdc
+.github/instructions/nx.instructions.md
+
+# Local caches
+.cache/
+.local/
+
+# environment files
+.env
+.env.*
+!.env.example
+
+# local deployment/tooling
+.vercel/
+
+# logs
+*.log
+pnpm-debug.log*
+
+# os/editor noise
+.DS_Store?
+*.swp
+*.swo
+
+# Local files. Keep source files, lockfiles, and environment examples in Git.
+!.env.sample
+!.env.template
+.envrc
+*.local.env
+.venv/
+venv/
+/env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+node_modules/
+.next/
+.nuxt/
+.vite/
+.angular/
+.build/
+dist/
+out/
+build/
+target/
+coverage/
+htmlcov/
+.coverage
+.coverage.*
+playwright-report/
+test-results/
+*.pid
+*.sqlite
+*.sqlite3
+*.sqlite-wal
+*.sqlite-shm
+*.sqlite3-wal
+*.sqlite3-shm
+*.db
+*.db-wal
+*.db-shm
+*.db-journal
+._*
+.idea/
+*~
+.codex/
+.claude/
+serviceAccountKey.json
+service-account*.json
+credentials*.json
+*.pem
+*.key
+*.p12
+*.pfx
+!.env.example
+!.env.sample
+!.env.template
+*.env
+*.env.*
+!*.env.example
+!*.env.sample
+!*.env.template
+
+# Local editor session state.
+.orchids/
+
+# Local double-click launchers
+/Start.command
+/Start.bat
+/Start.sh
+/start_local.py
+/start.local.json
+/.github/workflows/launcher-platforms.yml
+/.github/check_startup.py
